@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 @Service
 public class FacultyServiceImpl implements FacultyService {
     private final FacultyRepository facultyRepository;
-    private String color;
 
     public FacultyServiceImpl(FacultyRepository facultyRepository) {
         this.facultyRepository = facultyRepository;
@@ -44,7 +43,7 @@ public class FacultyServiceImpl implements FacultyService {
         return facultyRepository.save(faculty);
     }
     @Override
-    public Collection<Faculty> getAllByColor(String Color) {
+    public Collection<Faculty> getAllByColor(String color) {
         return getAll()
                 .stream()
                 .filter(it -> it.getColor().equals(color))
