@@ -12,4 +12,5 @@ public interface FacultyService {
     Faculty update (Faculty faculty);
 
 
+    Collection<Faculty> getAllByColor(String Color);
 }
