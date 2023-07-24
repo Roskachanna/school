@@ -14,4 +14,7 @@ public interface StudentService {
     Student update(Student student);
 
     Collection<Student> getAllById(int age);
+
+    Collection<Student> findByAgeBetween(int min, int max);
+
 }
