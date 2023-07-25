@@ -43,7 +43,7 @@ public class FacultyController {
         facultyService.remove(id);
     }
 
-    @GetMapping
+    @GetMapping("/faculties")
     public Faculty findByNameIgnoreCase(@RequestParam String name) {
         return facultyService.findByNameIgnoreCase(name);
     }
