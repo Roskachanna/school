@@ -47,7 +47,7 @@ public class FacultyServiceImpl implements FacultyService {
 
     }
     @Override
-    public Faculty findByNameIgnoreCase(String name) {
+    public Collection<Faculty> findByNameIgnoreCase(String name) {
         return facultyRepository.findByNameIgnoreCase(name);
     }
 

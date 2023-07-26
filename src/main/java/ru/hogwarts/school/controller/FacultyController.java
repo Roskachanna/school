@@ -44,7 +44,7 @@ public class FacultyController {
     }
 
     @GetMapping("/faculties")
-    public Faculty findByNameIgnoreCase(@RequestParam String name) {
+    public Collection<Faculty> findByNameIgnoreCase(@RequestParam String name) {
         return facultyService.findByNameIgnoreCase(name);
     }
 
