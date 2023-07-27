@@ -15,5 +15,5 @@ public interface FacultyService {
 
     Collection<Faculty> getAllByColor(String Color);
 
-    Collection<Faculty> findByNameIgnoreCase(String name);
+    Collection<Faculty> findByColorIgnoreCaseOrNameIgnoreCase(String color,String name);
 }
