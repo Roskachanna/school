@@ -19,7 +19,6 @@ public class FacultyControllerTestRestTemplate {
     @Test
     void contextLoads() throws Exception {
         Assertions.assertThat(facultyController).isNotNull();
-
     }
     @Test
     public void testGetFaculty() throws Exception {

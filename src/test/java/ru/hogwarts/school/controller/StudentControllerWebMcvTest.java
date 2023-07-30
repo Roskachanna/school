@@ -46,5 +46,4 @@ public class StudentControllerWebMcvTest {
                 .andExpect(jsonPath("$.name").value(student.getName()))
                 .andExpect(jsonPath("$.age").value(student.getAge()));
     }
-
 }
