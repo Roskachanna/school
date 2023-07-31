@@ -9,7 +9,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping("/students")
-public class StudentController {
+public class  StudentController {
 
     private final StudentService studentService;
 
@@ -45,5 +45,17 @@ public class StudentController {
     public Collection<Student> findByAgeBetween(@RequestParam int min, @RequestParam int max) {
         return studentService.findByAgeBetween(min, max);
     }
+
+    @GetMapping("/count")
+    public int getCountOfStudents() {
+        return studentService.getCountOfStudents();
+    }
+    @GetMapping("/average-age")
+    public int getAverageAge() {
+        return studentService.getAverageAge();
+    }
+    @GetMapping("/five-ordered-by-id")
+    public Collection<Student> getFiveStudentsOrderedById() {
+        return studentService.getFiveStudentsOrderedById();
+    }
 }
- 
