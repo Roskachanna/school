@@ -17,6 +17,9 @@ public class Student {
     public Student() {
     }
 
+    public Student(long l, String name, int age) {
+    }
+
     public Long getId() {
         return id;
     }
