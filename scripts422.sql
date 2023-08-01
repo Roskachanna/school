@@ -14,4 +14,3 @@ CREATE TABLE car
     model       VARCHAR(50),
     price       DECIMAL
 );
-

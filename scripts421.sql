@@ -12,4 +12,3 @@ ALTER TABLE student
 
 ALTER TABLE student
     ALTER COLUMN age SET DEFAULT 20;
-
