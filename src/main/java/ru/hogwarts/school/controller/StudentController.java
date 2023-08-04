@@ -56,6 +56,17 @@ public class  StudentController {
     }
     @GetMapping("/five-ordered-by-id")
     public Collection<Student> getFiveStudentsOrderedById() {
+
         return studentService.getFiveStudentsOrderedById();
+    }
+
+    @GetMapping("/starts-with-a")
+    public Collection<String> getStudentsStartsWithA() {
+        return studentService.getStudentsStartsWithA();
+    }
+
+    @GetMapping("/average-age-via-streams")
+    public double getAverageAgeViaStreams() {
+        return studentService.getAverageAgeViaStreams();
     }
 }

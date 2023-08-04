@@ -18,6 +18,7 @@ public interface FacultyService {
 
     Collection<Faculty> findByColorIgnoreCaseOrNameIgnoreCase(String color,String name);
 
-
     Collection<Student> getStudents(Long id);
+
+    String getLongestName();
 }
