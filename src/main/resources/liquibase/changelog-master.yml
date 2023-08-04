@@ -1,3 +1,0 @@
-databaseChangeLog:
-  - incLude:
-      file: liquibase/scripts/indexes.sql
