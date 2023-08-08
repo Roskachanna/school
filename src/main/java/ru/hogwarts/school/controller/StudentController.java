@@ -69,4 +69,14 @@ public class  StudentController {
     public double getAverageAgeViaStreams() {
         return studentService.getAverageAgeViaStreams();
     }
+
+    @GetMapping("/threads")
+    public void threads(){
+        studentService.threads();
+    }
+
+    @GetMapping("/synchronizer-threads")
+    public void synchronizerThreads(){
+        studentService.synchronizerThreads();
+    }
 }

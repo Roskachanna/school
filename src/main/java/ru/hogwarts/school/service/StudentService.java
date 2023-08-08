@@ -27,4 +27,8 @@ public interface StudentService {
     Collection<String> getStudentsStartsWithA();
 
     double getAverageAgeViaStreams();
+
+    void threads();
+
+    void synchronizerThreads();
 }
