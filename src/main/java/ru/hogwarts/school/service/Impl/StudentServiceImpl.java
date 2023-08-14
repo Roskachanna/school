@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class StudentServiceImpl implements StudentService {
+public class   StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
 
     private final Logger logger = LoggerFactory.getLogger(StudentServiceImpl.class);
@@ -134,7 +134,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     private synchronized void printStudentNameSynchronized(Student student) {
-            System.out.println((student.getName()));
+            System.out.println(student.getName());
     }
     @Override
     public void synchronizerThreads() {
